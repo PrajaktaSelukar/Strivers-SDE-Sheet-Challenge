@@ -7,7 +7,7 @@ vector<int> ninjaAndSortedArrays(vector<int>& arr1, vector<int>& arr2, int m, in
 		arr1[m+i]= arr2[i];
 		// cout<<" "<<arr2[i]<<endl;
 	}
-	if(arr1[m-1] > arr1[m])
+	if(m>0 && arr1[m-1] > arr1[m])
 	sort(arr1.begin(), arr1.end());
 	return arr1;    
 }
