@@ -13,7 +13,7 @@ vector<vector<int>> mergeIntervals(vector<vector<int>> &intervals)
 {
     vector<vector<int>> result;
     
-    if(intervals.size()==1) return result;
+    if(intervals.size()==0) return result;
     
     sort(intervals.begin(), intervals.end());
     vector<int> currentPair = intervals[0];
